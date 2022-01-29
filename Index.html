@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Playstation</title>
 </head>
 <body>
-    <!-- Top Bar -->
-<div>
+<!-- Top Bar -->
+<div id="topBar">
     <a href="https://www.sony.com/en/">Sony</a>
 </div>    
 <!-- Header -->
-<header>
-    <nav>
+<header id="header">
+    <nav class="flex">
 
-<div>sony logo</div>
-<div></div>
-<ul>
-    <li>Games</li>
-    <li>Hardware</li>
-    <li>Services</li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+        <div class="option-container flex">
 
+<div class="logo">
+    <a href="https://www.playstation.com/en-us/">
+        <img src="./assets/Logo.svg" alt="Logo">
+    </a>
+
+</div>
 <div>
+    <ul class="flex">
+        <li>Games</li>
+        <li>Hardware</li>
+        <li>Services</li>
+        <li>News</li>
+        <li>Shop</li>
+        <li>Support</li>
+    </ul>
+        </div>
+
+
+</div>
+
+<div class="sign-up">
     <button>Sign Up</button>
     <input type="text" placeholder="Search">
 </div>
