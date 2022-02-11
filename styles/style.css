@@ -4,6 +4,7 @@
   --black-color: black;
   --white-color: white;
   --primary-font: "Libre Baskerville", serif;
+  --grey-color: rgb(117, 117, 117);
 }
 
 * {
@@ -21,7 +22,6 @@ ul {
 
 li {
   list-style-type: none;
-  font-size: 15px;
 }
 
 #topBar {
@@ -46,15 +46,64 @@ li {
 
 .flex {
   display: flex;
-  align-items: center;
+}
+
+#header {
+  padding: 0 1.25rem;
 }
 
 #header nav {
   justify-content: space-between;
 }
 
-#header nav ul {
+#header .option-container {
+  width: 40%;
 }
 
-#header nav .option-container {
+#header .nav-left {
+justify-content: space-between;
+width: 100%;
+margin-top: 0.5rem;
+}
+
+#header .nav-left li {
+margin-left: 0.7rem;
+font-size: 0.8rem;
+font-weight: 500;
+color: rgb(117, 117, 117);
+font-family: helvetica, sans-serif;
+letter-spacing: 1.1px;
+}
+
+.sign-up button {
+background: #363636;
+color: var(--white-color);
+outline: none;
+border: none;
+border-radius: 20px;
+padding: 0.3rem 0.7rem;
+font-size: 1.1rem;
+font-weight: 545;
+letter-spacing: 1px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+transform: translateY(2px);
+}
+
+.sign-up button:hover {
+background-color: var(--grey-color);
+}
+
+.sign-up input {
+  width: 120px;
+  height: 43px;
+  border: 1px solid rgb(222, 222, 222);
+  outline: none;
+  padding: 0 0.3rem;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+}
+
+.sign-up input:hover {
+border: 1px solid rgb(54, 54, 54);
 }
